@@ -1,4 +1,4 @@
-# IDM250: Content Management Systems Class
+# IDM250: Content Management Systems
 
 ## Overview
 
