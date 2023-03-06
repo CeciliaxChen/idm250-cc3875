@@ -1,9 +1,17 @@
-*{
-    color: blue;
+/* fonts */
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito3.woff2');
 }
 
-h4 {
-    color: red;
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2, h3, h4 {
+    font-family: 'Nunito';
+    margin: .5rem 5rem;
 }
 
 .content-blocks h4 {
@@ -18,7 +26,7 @@ header {
     background-color: #fff;
     height: 8rem;
     margin-bottom: 2em;
-    font-family: 'Forum';
+    font-family: 'Nunito';
   }
 
 .nav-container{
@@ -41,6 +49,7 @@ header {
 
 .menu{
   display: flex;
+  list-style-type: none;
 }
 
 .nav-title{
@@ -61,4 +70,49 @@ header {
   font-size: 1.1rem;
   text-decoration: none;
   color: #AC5139;
+}
+
+
+p {
+    margin: 3rem 8rem;
+    font-family: 'Nunito';
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+ul {
+    margin: 2rem 10rem;
+    list-style-type: circle;
+    line-height: 2rem;
+    font-family: 'Nunito';
+}
+
+ol {
+    margin: 2rem 10rem;
+    list-style: hiragana;
+    line-height: 2rem;
+    font-family: 'Nunito';
+}
+
+figcaption {
+    font-family: 'Nunito';
+    font-size: .8rem;
+    text-align: center;
+}
+
+cite {
+    font-family: 'Nunito';
+}
+
+
+footer {
+    font-family: 'Nunito';
+    text-align: center;
+    margin: 2rem 0;
+}
+
+img {
+    display: flex;
+    width: 50%;
+    margin: auto;
 }
