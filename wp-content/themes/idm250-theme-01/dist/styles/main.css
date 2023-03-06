@@ -1,0 +1,64 @@
+*{
+    color: blue;
+}
+
+h4 {
+    color: red;
+}
+
+.content-blocks h4 {
+    color: black;
+    font-size: 22px; 
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: 8rem;
+    margin-bottom: 2em;
+    font-family: 'Forum';
+  }
+
+.nav-container{
+  width: 100%;
+  box-shadow: 0 4px 2px -2px rgb(210, 210, 210);
+  padding: 0 10rem;
+}
+
+.nav-title-container{
+  margin: 4rem 0;
+  display: block;
+  float: left;
+}
+
+.menu-header-menu-01-container{
+  margin: 4rem 0;
+  display: block;
+  float: right;
+}
+
+.menu{
+  display: flex;
+}
+
+.nav-title{
+    font-family: 'Forum';
+    color: #452415;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.nav-title:hover{
+    color: #AC5139;
+    transition: ease-in, 0.1s;
+}
+
+.menu-item{
+  padding: 0.5rem 2.5rem;
+  font-family: 'Open-Sans';
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #AC5139;
+}
