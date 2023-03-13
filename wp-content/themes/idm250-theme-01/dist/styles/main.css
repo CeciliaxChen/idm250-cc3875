@@ -72,6 +72,13 @@ header {
   color: #AC5139;
 }
 
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
 
 p {
     margin: 3rem 8rem;
@@ -109,6 +116,8 @@ footer {
     font-family: 'Nunito';
     text-align: center;
     margin: 2rem 0;
+    position: absolute;
+    bottom: 0;
 }
 
 img {
