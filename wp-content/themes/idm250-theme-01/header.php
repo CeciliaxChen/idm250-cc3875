@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> 
     <link rel="googlefonts" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDM250</title>
+    <title>
+    <?php
+        if (is_front_page() || is_home()) {
+            bloginfo('name');
+        } else {
+            wp_title('', true, 'right');
+            bloginfo('name');
+        }
+        ?>
+    </title>
     <?php wp_head(); ?> 
 </head>
 <body <?php body_class(); ?>>
@@ -40,6 +49,15 @@
         </div>
     </div>
   </header>
+
+
+  <body <?php body_class(); ?>>
+  <?php
+  // @link https://developer.wordpress.org/reference/functions/wp_body_open/
+  // Fires the wp_body_open action.
+    wp_body_open();
+    get_template_part('components/header')
+    ?>
   
   
   <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
