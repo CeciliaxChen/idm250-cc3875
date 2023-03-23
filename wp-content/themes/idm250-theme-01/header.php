@@ -24,29 +24,11 @@
 <?php wp_body_open(); ?>
   <header>
     <div class="nav-container">
+        <?php wp_nav_menu(['theme_location' => 'primary-menu-left']);?> 
         <div class="nav-title-container">
             <a class="nav-title" href="<?php echo home_url(); ?>"> Tea Leaves </a>
         </div>
-
-        <?php
-    // @link https://developer.wordpress.org/reference/functions/wp_body_open/
-    // Fires the wp_body_open action.
-    // wp_body_open();
-    //   get_template_part('components/header')
-        $menu = wp_nav_menu(['theme_location' => 'primary-menu']);
-    ?>
-        <div class="nav-links-container">
-            <ul class="nav-links">
-                <?php
-                // foreach ($menu as $menu_item) {
-                //     echo "
-                //         <li class='nav-link'>
-                //             <a href='{$menu_item->url}'>{$menu_item->title}</a>
-                //         </li>
-                //         ";
-                // }?>
-            </ul>
-        </div>
+        <?php wp_nav_menu(['theme_location' => 'primary-menu-right']);?> 
     </div>
   </header>
 

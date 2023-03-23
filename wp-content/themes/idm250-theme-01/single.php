@@ -1,20 +1,14 @@
-<?php get_header(); ?> 
-<article id="post-<?php the_ID(); ?>" <?php post_class();?>> 
-<!-- posr class will post class and give you info -->
-    <?php get_template_part('components/content'); ?> 
-</article> 
+<?php get_header(); ?>
 
-<?php 
-$currentPostId = get_the_id();
-$terms = get_the_terms($currentPostId, 'category');
+<!-- create a hero page --> 
 
-if ($terms) {
-    foreach ($terms as $term) {
-    echo "<p>{$term->name}</p>";
-}
-}
+<h1><?php echo get_the_title(); ?></h1> 
+<div><?php echo get_the_excerpt(); ?></div>
+<?php echo get_the_post_thumbnail_url(); ?> 
+
+
+<?php get_template_part('components/content'); ?> 
 
 
 
-?> 
 <?php get_footer(); ?> 

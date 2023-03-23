@@ -98,7 +98,8 @@ add_action('init', 'register_custom_post_types');
 function register_theme_menus()
 {
     register_nav_menus([
-        'primary-menu' => 'Primary Menu',
+        'primary-menu-left' => 'Primary Menu Left',
+        'primary-menu-right' => 'Primary Menu Right',
         'footer-menu' => 'Footer Menu'
     ]);
     
@@ -115,12 +116,6 @@ function register_theme_sidebars()
 }
 
 add_action('widgets_init', 'register_theme_sidebars');
-
-
-
-
-
-
 
 
 
@@ -172,3 +167,24 @@ add_action('init', 'add_acf_options_page');
 
 
 // changing taxonomy functions
+
+
+// adding instructor's archive functions
+function remove_archive_title_prefix($title)
+{
+    if (is_category()) {
+        $title = single_cat_title('', false);
+    } elseif (is_tag()) {
+        $title = single_tag_title('', false);
+    } elseif (is_author()) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif (is_post_type_archive()) {
+        $title = post_type_archive_title('', false);
+    } elseif (is_tax()) {
+        $title = single_term_title('', false);
+    }
+    return $title;
+}
+add_filter('get_the_archive_title', 'remove_archive_title_prefix');
+
+
