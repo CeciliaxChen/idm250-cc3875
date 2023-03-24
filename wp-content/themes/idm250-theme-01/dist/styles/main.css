@@ -23,60 +23,86 @@ h2, h3, h4 {
     font-size: 22px; 
 }
 
+body {
+    background-color: #fffdf9;
+}
 
+
+
+
+/* header nav */
 header {
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    height: 8rem;
+    background-color: #fffdf9;
+    height: 6rem;
     margin-bottom: 2em;
     font-family: 'Nunito';
 }
 
-.nav-container{
+.nav-container {
   width: 100%;
-  box-shadow: 0 4px 2px -2px rgb(210, 210, 210);
-  padding: 0 10rem;
-}
-
-.nav-title-container{
-  margin: 4rem 0;
-  display: block;
-  float: left;
-}
-
-.menu-header-menu-01-container{
-  margin: 4rem 0;
-  display: block;
-  float: right;
-}
-
-.menu{
+  /* box-shadow: 0 4px 2px -2px rgb(210, 210, 210); */
   display: flex;
+  justify-content: center;
+}
+
+.menu-header-menu-01-container {
+  margin: 4rem 0;
+}
+
+.menu {
+  display: block;
   list-style-type: none;
   font-family: 'Nunito';
-
+  padding: 0;
+  margin: 0;
 }
 
-.nav-title{
+.nav-title-container {
+    margin: 3rem 0;
+}
+
+.nav-title {
     font-family: 'Nunito';
-    color: #452415;
+    /* color: #452415; */
+    color: #3d532f;
     font-size: 2rem;
     text-decoration: none;
+    margin: 0 5rem;
 }
 
-.nav-title:hover{
-    color: #AC5139;
+.nav-title:hover {
+    color: #557a1a;
     transition: ease-in, 0.1s;
 }
 
-.menu-item{
-  padding: 0.5rem 2.5rem;
+.menu-item {
   font-family: 'Nunito';
   font-size: 1.1rem;
   text-decoration: none;
   color: #AC5139;
+  margin: 3rem 5rem;
 }
+
+.menu-item:hover {
+    color: #557a1a;
+    transition: ease-in, 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 strong {
     font-weight: bold;
@@ -133,4 +159,16 @@ img {
 
 h1 .menu-title {
     text-align: center;
+}
+
+
+
+/* FRONT PAGE */
+h1 .front-title {
+    font-family: 'Nunito';
+
+}
+
+.wp-image-118 {
+    width: 60%;
 }

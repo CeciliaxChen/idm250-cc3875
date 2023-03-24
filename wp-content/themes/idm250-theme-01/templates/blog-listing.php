@@ -22,7 +22,7 @@ $current_category = '';
 
 <h1><?php echo get_the_title(); ?></h1> 
 <div><?php echo get_the_excerpt(); ?></div>
-<img src="<?php echo get_the_post_thumbnail_url(); ?> "/>
+<img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
 
 </div>
 
