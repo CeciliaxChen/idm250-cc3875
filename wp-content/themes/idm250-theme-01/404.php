@@ -1,7 +1,5 @@
-<?php get_header('404'); ?>
+<?php get_header(); ?>
 
-<div>
-    <h2> Oops! You may have gone to the wrong page! 
-</div>
+<?php echo get_the_post_thumbnail_url(); ?> 
 
-<?php get_footer('simple'); ?>
+<?php get_footer('simple'); ?> 

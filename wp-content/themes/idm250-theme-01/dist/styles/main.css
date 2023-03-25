@@ -172,3 +172,114 @@ h1 .front-title {
 .wp-image-118 {
     width: 60%;
 }
+
+.content-blocks h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.content-blocks p {
+    font-size: 1rem;
+}
+
+
+
+/* PAGE.PHP */
+.page .content-blocks .wp-block-columns .wp-block-column .wp-block-pullquote blockquote p {
+    color: #3d532f;
+}
+
+.page .content-blocks h4 {
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+}
+
+.page .content-blocks {
+    text-align: left;
+}
+
+.wp-image-136 {
+    width: 70%;
+    border-radius: 1rem;
+}
+
+/* Button */
+.page .content-blocks .wp-block-buttons .wp-block-button a {
+    font-family: "Nunito";
+}
+
+.page .content-blocks figcaption {
+    margin: .5rem 7rem;
+    line-height: 1.5rem;
+}
+
+.page .wp-block-column .wp-block-pullquote cite {
+    font-size: 1.5rem;
+}
+
+.page .content-blocks .wp-block-table {
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.page .content-blocks .wp-block-table table tr {
+    font-family: "Nunito";
+}
+
+.page .content-blocks .wp-block-embed {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* blog-list */
+
+.page-template-blog-listing img {
+    margin: 0;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.page-template-blog-listing main h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.page-template-blog-listing h3 {
+    font-size: 1.25rem;
+}
+
+.page-template-blog-listing p {
+    font-size: 1rem;
+    margin: 0;
+    margin: 0 7rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* single.php */
+.single main h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: "Nunito";
+}
+
+.single main .content-blocks p {
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+
+/* 404 */
+h5 {
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4rem 0;
+}
